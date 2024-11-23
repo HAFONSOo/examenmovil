@@ -1,0 +1,33 @@
+ion-content{
+    --background: rgb(102,102,102,1);
+  }
+  h1{
+    text-align: center;
+    padding-top: 120px;
+    font-size: xx-large;
+  }
+  
+  .item1{
+    border-bottom: 1px solid rgba(26, 26, 26, 1);
+    --background: transparent;
+    margin: 30px;
+  }
+  .yaTienes{
+    font-size: 13px;
+    text-align: center;
+  }
+  .yaTienes ion-label{
+    padding: 5px;
+  }
+  .yaTienes {
+    color: rgba(255, 184, 0, 1);
+  }
+  .botonIng{
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --background: rgba(255,184,0,1);
+    color: black;
+  }

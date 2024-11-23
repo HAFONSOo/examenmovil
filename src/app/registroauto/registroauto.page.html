@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>TeLlevoApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+    <div>
+      <div>Marca</div> 
+      <ion-input label-placement="floating" fill="outline" [(ngModel)]="data.marca"></ion-input>
+     </div>
+     <div >
+       <div  class="ion-text-center"><ion-label style="font-size: 12px; " >Color</ion-label></div> 
+       <ion-input label-placement="floating" fill="outline" [(ngModel)]="data.color"></ion-input>
+      </div>
+    
+      <div >
+       <div  class="ion-text-center "><ion-label style="font-size: 12px; " >Patente</ion-label></div> 
+       <ion-input label-placement="floating" fill="outline" [(ngModel)]="data.patente"></ion-input>
+      </div>
+      <div >
+        <div ><ion-label >Año</ion-label></div> 
+        <ion-input label-placement="floating" fill="outline" [(ngModel)]="data.annio"></ion-input>
+       </div>
+
+      <div>
+       <ion-button  size="3" color="dark" class="a" (click)="crearDocumento()">Agregar Producto</ion-button>
+
+      </div>
+  
+</ion-content>

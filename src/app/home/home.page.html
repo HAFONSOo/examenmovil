@@ -1,0 +1,53 @@
+<ion-menu side="start" menuId="first" contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+        <ion-button  class="botonIng"  fill="clear" expand="block" [routerLink]="['/login']">login</ion-button>
+        <ion-button   class="botonIng" fill="clear" [routerLink]="['/registro']">Registrarse</ion-button>
+      
+        <ion-button   class="botonIng" fill="clear" [routerLink]="['/registroauto']">Registrar Automovil</ion-button>
+        <ion-button   class="botonIng" fill="clear" [routerLink]="['/misautos']">Mi Automovil</ion-button>
+        <ion-button   class="botonIng" fill="clear" (onClick)="cerrarsesion()">Cerrar sesion</ion-button>
+      
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>San Bernardo</ion-title>
+  </ion-toolbar>
+  <ion-label>
+    {{user}}
+  </ion-label>
+</ion-header>
+
+<ion-content id="main-content" class="ion-padding" [fullscreen]="true" style="background-color: #4c4c4c;">
+  <!-- Mapa centrado -->
+  <div id="map" style="height: 300px; width: 100%; border-radius: 5px; margin: auto;"></div>
+
+  <!-- Botones debajo del mapa -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="warning" (click)="startRoute()">
+          Iniciar ruta
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="block" color="warning" (click)="searchRoute()">
+          Buscar ruta
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

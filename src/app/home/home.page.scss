@@ -1,0 +1,44 @@
+ion-content {
+  background-color: #e71818; /* Fondo gris */
+  color: #8ce714; /* Color de texto blanco para mayor contraste */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid #e71111; /* Borde blanco alrededor del mapa */
+}
+
+ion-toolbar {
+  background-color: #a12525; /* Toolbar gris */
+}
+
+ion-title {
+  color: #a71616; /* Color de título blanco */
+}
+
+
+
+ion-menu {
+  --background: #aa0606; /* Fondo gris del menú lateral */
+}
+
+ion-item {
+  --color: #d81d1d; /* Color de texto blanco en el menú */
+}
+
+
+
+.botonIng{
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --background: rgba(255,184,0,1);
+  color: black;
+}

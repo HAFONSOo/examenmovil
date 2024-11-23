@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>misautos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Mi Automovil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list >
+    <ion-item-group>
+      <ion-item *ngFor="let x of productos">
+        <div>
+          <h1><strong>Marca:{{x.marca}}</strong></h1>
+
+
+          <p><Strong>Color:{{x.color}}</Strong></p>
+          <p><strong>Patente:{{x.patente}}</strong></p>
+          <p><strong>Año:{{x.annio}}</strong></p>
+          <ion-button color="danger" (click)="eliminarProducto(x)">Eliminar</ion-button>
+          <ion-button color="success" (click)="modificarProducto(x)">modificar</ion-button>
+        </div>
+        
+      </ion-item>
+    </ion-item-group>
+    
+  </ion-list>
+</ion-content>
